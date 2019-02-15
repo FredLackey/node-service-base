@@ -1,0 +1,25 @@
+{
+  "name": "node-service-base",
+  "version": "0.0.0",
+  "description": "Node Service Base",
+  "main": "src/server.js",
+  "scripts": {
+    "debug": "nodemon --inspect ./src/server.js 9229",
+    "dev": "nodemon ./src/server.js",
+    "test": "eslint --ignore-path .gitignore --ext .js ./",
+    "test:fix": "eslint --fix --ignore-path .gitignore --ext .js ./"
+  },
+  "author": "Fred Lackey <fred.lackey@gmail.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "app-root-path": "^2.1.0",
+    "cleaner-node": "^0.3.4",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "nodemon": "^1.18.10"
+  }
+}
